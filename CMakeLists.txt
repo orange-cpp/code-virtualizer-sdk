@@ -1,6 +1,8 @@
-cmake_minimum_required(VERSION 3.28)
-
+cmake_minimum_required(VERSION 3.28.1)
 project(cv-sdk)
+
+set(FOUND_CV_SDK 1 CACHE STRING "A global variable set in the lib directory")
+
 
 add_library(cv-sdk INTERFACE)
 target_include_directories(cv-sdk INTERFACE include)
