@@ -10,6 +10,7 @@
 /***********************************************
  * Definition as inline assembly
  ***********************************************/
+#pragma once
 
 #ifdef PLATFORM_ARM64
 

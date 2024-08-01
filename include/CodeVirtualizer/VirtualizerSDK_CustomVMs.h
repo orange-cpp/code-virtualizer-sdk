@@ -11,6 +11,8 @@
 // ***********************************************
 // Definition of macros as function names
 // ***********************************************
+#pragma once
+
 
  #ifdef __cplusplus
   extern "C" {
