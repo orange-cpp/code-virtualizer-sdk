@@ -1,6 +1,6 @@
 <div align = center>
 
-<img src="https://www.oreans.com/assets/images/CodeVirtualizer.png" alt="banner">
+<img src="https://i.imgur.com/vQAo5NB.png" alt="banner">
 
 </div>
 
