@@ -8,5 +8,3 @@ target_include_directories(cv-sdk INTERFACE include)
 if (WIN32)
     target_link_directories(cv-sdk INTERFACE lib)
 endif()
-
-set(FOUND_CV_SDK 1 PARENT_SCOPE)
