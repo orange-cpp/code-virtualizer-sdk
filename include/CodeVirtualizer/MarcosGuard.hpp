@@ -6,7 +6,7 @@
 #ifdef _MSC_VER
 #   define CV_MACROS_FORCEINLINE __forceinline
 #else
-#   define XORSTR_FORCEINLINE __attribute__((always_inline)) inline
+#   define CV_MACROS_FORCEINLINE __attribute__((always_inline)) inline
 #endif
 
 
