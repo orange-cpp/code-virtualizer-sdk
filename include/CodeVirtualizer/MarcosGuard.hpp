@@ -76,4 +76,12 @@ namespace CodeVirtualizer
     CV_MAKE_MACROS_GUARD_DEF(FALCON_TINY)
 }
 
-#define CV_PLACE_GUARD_MACROS(name) CodeVirtualizer::MarcosGuard##name cv_guard##__COUNTER__;
+// Main Macro for Creating Unique Guard Macros
+#define CV_PLACE_GUARD_MACROS(name) CV_PLACE_GUARD_MACROS_IMPL(name, __COUNTER__)
+
+// Helper Macro for Implementing the Unique Guard Macros
+#define CV_PLACE_GUARD_MACROS_IMPL(name, index) CV_PLACE_GUARD_MACROS_IMPL2(name, index)
+
+// Additional Level of Indirection to Force Expansion
+#define CV_PLACE_GUARD_MACROS_IMPL2(name, index) CodeVirtualizer::MarcosGuard##name cv_guard##index;
+
